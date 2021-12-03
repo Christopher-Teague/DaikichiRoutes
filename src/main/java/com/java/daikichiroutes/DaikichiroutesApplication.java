@@ -40,8 +40,6 @@ public class DaikichiroutesApplication {
 	 	return "Tomorrow, an opportunity will arise, so be sure to be open to new ideas!";
 	 }
 	 
-// @RestController
-// public class HomeController {
      @RequestMapping("/travel/{destination}")
      public String destination(@PathVariable("destination") String destination){
      	return "Congratulations! You will soon travel to " + destination +"!";
@@ -54,8 +52,6 @@ public class DaikichiroutesApplication {
     	 } 
     	 return "You have enjoyed the fruits of your labor but now is a great time to spend time with family and friends...";
      }
-// }
-	 
 	 
 }
 }
